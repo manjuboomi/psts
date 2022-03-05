@@ -64,12 +64,11 @@
 	</script> -->
 
 	<style>
+		
 		@media (max-width: 780px) {
-			.phomail {
-				display: none !important;
-			}
+			
 			.phomail1 {
-			    display: block !important;
+			    display: flexbox !important;
 			}
 			
 		}
@@ -194,8 +193,15 @@
 			        
 			 
 		    margin-left: -18px;
+			margin-right: 1%;
 		    
 			    }
+			}
+			@media screen and (max-width: 360px){
+				#logo{
+					width: 10px;
+					height: 50px;
+				}
 			}
 </style>
 		<div class="container-fluid">
@@ -217,19 +223,18 @@
 							
 							<div id="logo">
 								<a href="index.html">
-									<img src="./about_us_files/shipping-services-logo.png" title="best shipping logistics solutions company in tuticorin" alt="comprehensive and customized services in tuticorin" style="margin-top: -12px;    width: 175px;">
+									<img src="./about_us_files/shipping-services-logo.png" title="best shipping logistics solutions company in tuticorin" alt="comprehensive and customized services in tuticorin" style="margin-top: -12px;    width: 175px;margin-left:-14px">
 								</a>
 							</div><!-- end #logo -->	 
 						
 						</div><!-- end .col -->
 						<div class="col-xs-7 col-sm-6 col-md-9 col-lg-10" style="padding: 0px;text-align: right;padding-right: 10px;">
-						    <p class="phomail1" style="text-align: right;display:none;"><i class="fa ti-mobile" style="color: #E75748;"></i>&nbsp;&nbsp;+91 - 461 235 3227</p>
-						
+						   
 						    
-							<p class="phomail" style="text-align: right;"><i class="fa fa-envelope" style="color: #E75748;"></i>&nbsp;&nbsp;arjun@pstsshippingservices.com&nbsp;&nbsp;<i class="fa fa-phone" style="color: #E75748;"></i>&nbsp;&nbsp;+91 - 461 235 3227</p>
+							<p class="phomail" style="text-align: right;margin-left: -34px; font-size: medium;"><i class="fa fa-envelope" style="color: #E75748;">&nbsp;&nbsp;arjun@pstsshippingservices.com</i>&nbsp;&nbsp;<i class="fa fa-phone" style="color: #E75748;">&nbsp;&nbsp;+91 - 461 235 3227</i></p>
                             <h5> <marquee style="width: 40%">*we have migrated to new e-mail server from .com extension to .in extension. Kindly note the 
                             changes in our e-mail id extension.</marquee></h5>
-							<nav style="margin-top: 0;">
+							<nav style="margin-top: 0; margin-right: 1%;">
 							
 								<!-- /// Desktop Menu //////// -->
 								 
@@ -266,19 +271,19 @@
 									<li><a href="client.html">Clients</a></li>									
 									<li><a href="career.html">Careers</a></li>
 									<li><a href="contact.html">Contact</a></li>
-								</ul><!-- end #desktop-menu -->	
+								<!-- end #desktop-menu -->	
 					
 								
 								<!-- /// Mobile Menu Trigger //////// -->
+									
+								<li>	<a href="contact.html#enq"  id="header-button">For Enquiry</a>
+								</li></ul>
+								<!-- /// Mobile Menu Trigger //////// -->
 								
-								<a href="about_us.html#" id="mobile-menu-trigger" class="mobile-menu-closed">
-									<i class="ti-menu"></i>
+								<a href="index.html#" id="mobile-menu-trigger" class="mobile-menu-closed">
+									<i class="fa fa-bars"></i>
 								</a><!-- end #mobile-menu-trigger -->
 
-								<!-- /// Header Call to Action //////// -->
-								
-								<a href="contact.html#enq" class="hidden-xs hidden-sm hidden-md" id="header-button">For Enquiry</a>
-								
 							</nav>	
 						
 						</div><!-- end .col -->
@@ -349,26 +354,21 @@
 						
 						<div class="row">
 							<div class="col-md-6">
-								
+																
 								<div class="ewf-iconbox ewf-iconbox--icon-left-aligned">
-							
-									<div class="ewf-iconbox__icon">
-										<i class="fa ti-eye few"></i>
-									</div>
-
+															
+														
 									<div class="ewf-iconbox__content">
 										
-										<h5 class="ewf-iconbox__title">
-											Our <b style="    font-weight: 800;">Mission</b>
+										<h5 class="ewf-iconbox__title"  ><img src="./about_us_files/icon.png" style="width: 8%; " />
+										&nbsp; &nbsp;	Our <b style="    font-weight: 800;">Mission</b>
 										</h5>
-										
-										
-										
-										<ul class="ewf-checklist" style="    font-size: 15px;font-weight: 500;">
-											<li>Innovative solutions for our demanding customers</li>
-											<li>Service with uncompromising quality and timely response</li>
-											<li>Long-term relationship and commitment to every customer</li>
-											<li>Forward-looking to maintain leadership in the industry</li>
+																														
+										<ul  style="    font-size: 15px;font-weight: 500; list-style-type:  none;">
+											<li style="padding-left: 50px;"><img src="./about_us_files/icon.png" style="width: 4%;"/>Innovative solutions for our demanding customers</li>
+											<li style="padding-left: 50px;"><img src="./about_us_files/icon.png" style="width: 4%;"/>Service with uncompromising quality and timely response</li>
+											<li style="padding-left: 50px;"><img src="./about_us_files/icon.png" style="width: 4%;"/>Long-term relationship and commitment to every customer</li>
+											<li style="padding-left: 50px;"><img src="./about_us_files/icon.png" style="width: 4%;"/>Forward-looking to maintain leadership in the industry</li>
 										</ul>
 						
 									</div>
@@ -380,27 +380,28 @@
 								
 								<div class="ewf-iconbox ewf-iconbox--icon-left-aligned">
 							
-									<div class="ewf-iconbox__icon">
-									<i class="fa ti-eye few"></i>
-									</div>
+							
+										
+									
 
 									<div class="ewf-iconbox__content">
 										
-										<h5 class="ewf-iconbox__title">
-											<a href="about_us.html#">Our <b style="    font-weight: 800;"> vision</b></a>
+										<h5 class="ewf-iconbox__title"><img src="./about_us_files/icon.png" style="width: 8%;"/>
+										&nbsp;	&nbsp;<a href="about_us.html#">Our <b style="    font-weight: 800;"> vision</b></a>
 										</h5>
 										
 										
 										
-										<ul class="ewf-checklist" style="    font-size: 15px;font-weight: 500; ">
+										<ul  style="font-size: 15px;font-weight: 500; list-style-type: none;">
 											<!-- <li>Provide trustworthy, value-added and flawless services to our customers in the field of Customs Broking, Freight Forwarding and DGFT consulting.</li> -->
 											<!-- <li>Air & Ocean Cargo Insurance</li> -->
 											
-											<li>Our highly efficient customs brokerage</li>
-											<li>Clearance and compliance service</li>
-											<li>We ensure complete security</li>
+											<li style="padding-left: 50px;"><img src="./about_us_files/icon.png" style="width: 4%;"/>Our highly efficient customs brokerage</li>
+											<li style="padding-left: 50px;"><img src="./about_us_files/icon.png" style="width: 4%;"/>Clearance and compliance service</li>
+											<li style="padding-left: 50px;"><img src="./about_us_files/icon.png" style="width: 4%;"/>We ensure complete security</li>
 										</ul>
-						
+						             
+									
 									</div>
 									
 								</div><!-- end .ewf-iconbox -->
@@ -425,7 +426,7 @@ Today, PSTS is a distinct corporate entity, with a leadership position in the Ea
 			</div><!-- end .container -->
 			
 					
-			<div class="ewf-section ewf-section--parallax ewf-theme-contrast" style="background-image:url(content/sections/1920x1000-2.jpg);padding: 15px;">
+			<div class="ewf-section ewf-section--parallax ewf-theme-contrast" style="background-image:url(content/sections/1920x1000-2.jpg);padding: 15px; margin-left: -15px;">
 				<div class="ewf-section__overlay-color-right" style="width: 
 				112%;"></div>
 				<div class="ewf-section__content">				
@@ -476,7 +477,7 @@ Today, PSTS is a distinct corporate entity, with a leadership position in the Ea
 					</div><!-- end .col -->
 					<div id="footer-widget-area-3" class="col-sm-4 col-lg-3">
 						
-						<div class="widget ewf-widget_contact_info">
+						<div class="widget ewf-widget_contact_info" style="margin-left: -16px;">
 								
 							<h5 class="widget-title">Corporate Offices</h5>
 							
@@ -549,7 +550,7 @@ Tamilnadu,  India,
 							
 							<div class="textwidget">
 								
-								<p>Copyright © 2020. PSTS Shipping Services. All rights reserved.</p>
+								<p>Copyright © 2022. PSTS Shipping Services. All rights reserved.</p>
 								
 							</div>
 							

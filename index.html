@@ -65,15 +65,34 @@
 	
 
 	<style>
-		@media (max-width: 780px) {
-			.phomail {
-				display: none !important;
-			}
-			.phomail1 {
-			    display: block !important;
-			}
-			
+		/* *{
+			box-sizing: border-box;
 		}
+	
+		@media only screen and (max-width: 780px) {
+			.phomail {
+				display: inline-block !important;
+			}
+		}
+		@media only screen and (max-width: 1200px) {
+			.phomail {
+				display: inline-block !important;
+			}
+		}
+		@media only screen and (min-width: 560px) {
+			.phomail {
+				display: inline-block !important;
+				font-size: 2vh 3vw;
+			}
+		} */
+		@media only screen and (max-width: 360px) {
+			.phomail {
+				display: flexbox !important;
+			    font-size: 18px;
+				margin-left: -30;
+			}
+		}
+				
 		@media (max-width: 450px) {
 			.mobsli {
 				height: 400px !important;
@@ -96,10 +115,22 @@
         background: blue;
         margin-bottom: 20px;
     }
+	.award{
+			text-align: center;
+			font-style: italic;
+			color:#E75748;
+			font-weight: 800;
+		}
+		@media screen and (max-width: 360px){
+				#logo{
+					width: 100px;
+					height: 50px;
+				}
+			}
 	</style>
 	
 </head>
-<body style="overflow-x: hidden;">
+<body style="overflow-x:hidden; position: relative; margin-right: 1%;">
 	
 	<div id="wrap">
 
@@ -109,21 +140,24 @@
 		<!--				</div>-->
 		<!--			</div>-->
 		<!--		</div>-->
-		<style>
+		<!-- <style>
     	@media (max-width: 360px){
-			    .phonmail1{
+			    .phonmail{
 			        
-			 
+			 display: inline-flex;
 		    margin-left: -18px;
 		    
 			    }
 			}
         .award{
-			
+			text-align: center;
+			font-style: italic;
+			color:#E75748;
+			font-weight: 800;
 		}
 
 
-</style>
+</style> -->
 		<div class="container-fluid">
 					<div class="row">
 						<div class="col-xs-12 col-sm-12 col-md-12 col-lg-12" style="height: 6px;background: #64AAB4">
@@ -143,16 +177,14 @@
 							
 							<div id="logo">
 								<a href="index.html">
-									<img src="./index_files/shipping-services-logo.png" title="best shipping logistics solutions company in tuticorin" alt="comprehensive and customized services in tuticorin" style="margin-top: -12px;    width: 175px;">
+									<img src="./index_files/shipping-services-logo.png" title="best shipping logistics solutions company in tuticorin" alt="comprehensive and customized services in tuticorin" style="margin-top: -12px;    width: 155px; margin-left:-14px">
 								</a>
 							</div><!-- end #logo -->	 
 						
 						</div><!-- end .col -->
 						<div class="col-xs-7 col-sm-6 col-md-9 col-lg-10" style="padding: 0px;text-align: right;padding-right: 10px;">
-						    <p class="phomail1" style="text-align: right;display:none;"><i class="fa ti-mobile" style="color: #E75748;"></i>&nbsp;&nbsp;+91 - 461 235 3227</p>
-						
-						    
-							<p class="phomail" style="text-align: right;"><i class="fa fa-envelope" style="color: #E75748;"></i>&nbsp;&nbsp;arjun@pstsshippingservices.com&nbsp;&nbsp;<i class="fa fa-phone" style="color: #E75748;"></i>&nbsp;&nbsp;+91 - 461 235 3227</p>
+						   						    
+							<p class="phomail" style="text-align: right; margin-left: -34px; font-size: medium; "><i class="fa fa-envelope" style="color: #E75748;">&nbsp;&nbsp;arjun@pstsshippingservices.com</i>&nbsp;&nbsp;<i class="fa fa-phone" style="color: #E75748;">&nbsp;&nbsp;+91 - 461 235 3227</i></p>
                             <h5> <marquee style="width: 40%">*we have migrated to new e-mail server from .com extension to .in extension. Kindly note the 
                             changes in our e-mail id extension.</marquee></h5>
 							<nav style="margin-top: 0;">
@@ -192,19 +224,26 @@
 									<li><a href="client.html">Clients</a></li>									
 									<li><a href="career.html">Careers</a></li>
 									<li><a href="contact.html">Contact</a></li>
-								</ul><!-- end #desktop-menu -->	
+								<!-- </ul>end #desktop-menu	 -->
 					
 								
 								<!-- /// Mobile Menu Trigger //////// -->
-								
+<!-- 								
 								<a href="index.html#" id="mobile-menu-trigger" class="mobile-menu-closed">
-									<i class="ti-menu"></i>
-								</a><!-- end #mobile-menu-trigger -->
+									<i class="fa fa-bars"></i>
+								</a>end #mobile-menu-trigger -->
 
 								<!-- /// Header Call to Action //////// -->
 								
-								<a href="contact.html#enq" class="hidden-xs hidden-sm hidden-md" id="header-button">For Enquiry</a>
+							<li>	<a href="contact.html#enq"  id="header-button">For Enquiry</a>
+								</li></ul>
+								<!-- /// Mobile Menu Trigger //////// -->
 								
+								<a href="index.html#" id="mobile-menu-trigger" class="mobile-menu-closed">
+									<i class="fa fa-bars"></i>
+								</a><!-- end #mobile-menu-trigger -->
+
+
 							</nav>	
 						
 						</div><!-- end .col -->
@@ -281,7 +320,7 @@
 									<h2 class="ewf-headline__title">Logistics Services</h2>
 								</div><!-- end .ewf-headline -->
 								
-								<p>PSTS Shipping Services provides one stop service for all logistics services requirements in all the South-East Indian ports of India – major/minor and private ports. The company offers a range of logistics services viz, port related logistics services, road/rail logistics, heavy equipment hiring &amp; trading and in-plant logistics services.</p>
+								<p style="text-align: justify;">PSTS Shipping Services provides one stop service for all logistics services requirements in all the South-East Indian ports of India – major/minor and private ports. The company offers a range of logistics services viz, port related logistics services, road/rail logistics, heavy equipment hiring &amp; trading and in-plant logistics services.</p>
 
 								
 								<a href="about_us.html" class="ewf-btn">Learn More<i class="fa fa-arrow-right"></i></a>
@@ -305,13 +344,13 @@
 			</div><!-- end .ewf-section -->
 
 
-			<div class="ewf-section newnow" style="background-color: #e9ebf3;padding: 60px;
+			<div class="ewf-section newnow" style="background-color: #ffffff;padding: 60px;
 ">
 				<div class="ewf-section__content">
 					
 					
 					<div class="container">
-						<h1 class="award">Awards</h1>
+						<h1 class="award">Awards</h1><br>
 						<div class="row">
 							<div class="col-md-6 block1" data-move-y="200px" data-move-x="-200px" style="transition: all 1s ease 0s, opacity 1.5s ease 0s; opacity: 1;">
 								
@@ -346,7 +385,7 @@
 			</div><!-- end .ewf-section -->
 
 
-			<div class="ewf-section newnow" style="background-color: #e9ebf3;padding: 60px;
+			<div class="ewf-section newnow" style="background-color: #ffffff;padding: 60px;
 ">
 				<div class="ewf-section__content">
 					
@@ -561,7 +600,7 @@
 			
 			
 					
-			<div class="ewf-section ewf-section--parallax ewf-theme-contrast" style="background-image:url(content/sections/1920x1000-2.jpg);padding: 15px;">
+			<div class="ewf-section ewf-section--parallax ewf-theme-contrast" style="background-image:url(content/sections/1920x1000-2.jpg);padding: 15px; margin-left: -15px;">
 				<div class="ewf-section__overlay-color-right" style="width: 
 				112%;"></div>
 				<div class="ewf-section__content">				
@@ -611,9 +650,9 @@
 					</div><!-- end .col -->
 					<div id="footer-widget-area-3" class="col-sm-4 col-lg-3">
 						
-						<div class="widget ewf-widget_contact_info">
+						<div class="widget ewf-widget_contact_info" style="margin-left: -16px;">
 								
-							<h5 class="widget-title">Corporate Offices</h5>
+							<h5 class="widget-title" >Corporate Offices</h5>
 							
 							<ul class="ewf-contact-info" style="margin-left: 20px;">
 								<li>
@@ -684,7 +723,7 @@ Tamilnadu,  India,
 							
 							<div class="textwidget">
 								
-								<p>Copyright © 2020. PSTS Shipping Services. All rights reserved.</p>
+								<p>Copyright © 2022. PSTS Shipping Services. All rights reserved.</p>
 								
 							</div>
 							
